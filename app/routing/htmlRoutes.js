@@ -2,9 +2,6 @@
 var path = require("path");
 var express = require("express");
 var router = express.Router();
-
-
-// module.exports = function(app) {
  
   router.get("/survey", function(req, res)
   {
@@ -15,4 +12,3 @@ var router = express.Router();
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });
   module.exports = router;
-// };

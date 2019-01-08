@@ -142,8 +142,6 @@
             Submit</button>
             <hr>
 
-
-            <!-- Bootstrap Modal for showing best match on submit -->
 			<div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="modalHeader" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -180,7 +178,6 @@
 <script type="text/javascript">
 	$("#submit-button").on("click", function(event) {
 		event.preventDefault();
-		//save answers into object
 		var newData = {
 			name: $("#name").val().trim(),
 			photo: $("#photo").val().trim(),
@@ -200,8 +197,7 @@
 		console.log(newData);
 		
 		$.post("/api/friends", newData, function(data) {
-			//data variable contains best-matched profile
-			//write name and image URL into Bootstrap Modal
+		
 			$("#bestName").text(data.name);
 			$("#bestPhoto").attr("src", data.photo);
 		});
