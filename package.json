@@ -1,0 +1,24 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "This is a compatibility-based \"FriendFinder\" application -- basically a dating app. \r This full-stack site will take in results from users' surveys, then compare their answers with those from other users. \r The app will then display the name and picture of the user with the best overall match.\r Express was used for routing. Deployed using Heroku.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashackn/express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashackn/express/issues"
+  },
+  "homepage": "https://github.com/ashackn/express#readme"
+}
